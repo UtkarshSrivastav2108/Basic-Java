@@ -2,18 +2,19 @@ package com.practice.main;
 
 import java.util.Scanner;
 
-public class DisplayDigits {
-
+public class CountDigitOfNumber {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the Number");
         int n = sc.nextInt();
-        int r;
-        while (n > 0) {
-            r = n % 10;
-            n = n / 10;
+        int count = 0;
 
-            System.out.println(r);
+        while (n > 0) {
+
+            n = n / 10;
+            count++;
+
         }
+        System.out.println(count);
     }
 }
